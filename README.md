@@ -1,7 +1,7 @@
 SimpleImage
 ===========
 
-SimpleImage, e uma classe criada com o intuito de facilitar a manipulaÁ„o de imagens no php, necess·ria as extensıes Exif e GD.
+SimpleImage, e uma classe criada com o intuito de facilitar a manipula√ß√£o de imagens no php, necess√°ria as extens√µes Exif e GD.
 
 
 Exemplo
@@ -11,16 +11,16 @@ Exemplo
 	
 	$simple = new SimpleImage('../imagem/teste.png');
 	
-FunÁıes
+Fun√ß√µes
 -------
 
-	// rotaciona a imagem 90∫ sentido anti-horario
+	// rotaciona a imagem 90¬∫ sentido anti-horario
 	$simple->rotate90();
 	
-	// rotaciona a imagem 180∫ sentido anti-horario
+	// rotaciona a imagem 180¬∫ sentido anti-horario
 	$simple->rotate180();
 	
-	// rotaciona a imagem 270∫ sentido anti-horario
+	// rotaciona a imagem 270¬∫ sentido anti-horario
 	$simple->rotate270();
 	
 	// muda o tipo da imagem para gif
@@ -32,16 +32,16 @@ FunÁıes
 	// muda o tipo da imagem para jpeg
 	$simple->cloneToJPEG();
 	
-	// corta uma parte da imagem, de acordo com os par‚metros passado
+	// corta uma parte da imagem, de acordo com os par√¢metros passado
 	$simple->crop($width, $height, $percToRight, $percToBottom);
 	
-	// redimensiona a imagem, para os novos par‚metros informados
+	// redimensiona a imagem, para os novos par√¢metros informados
 	$simple->resize($newWidth, $newHeigth);
 	
-	// redimensiona a imagem, para os novos par‚metros informados proporcionalmente
+	// redimensiona a imagem, para os novos par√¢metros informados proporcionalmente
 	$simple->resizeProportional($newWidth, $newHeigth);
 	
-	// copia uma imagem para outra, informando a posiÁ„o da sobreposiÁ„o
+	// copia uma imagem para outra, informando a posi√ß√£o da sobreposi√ß√£o
 	$simple->merge('../imagem/nova.gif', $percToRight, $percToBottom);
 	
 	// retorna a altura da imagem
@@ -60,10 +60,10 @@ FunÁıes
 	$simple->getFile();
 	
 	// escreve na imagem
-	* necess·rio setar a fonte primeiro
+	* necess√°rio setar a fonte primeiro
 	$simple->write($texto, $percToRight, $percToBottom);
 	
-	// setar a fonte que ser· usada durante a escrita
+	// setar a fonte que ser√° usada durante a escrita
 	$simple->setFont($caminho);
 	
 	// seta a cor da fonte
@@ -72,14 +72,16 @@ FunÁıes
 	// seta o tamanho da fonte
 	$simple->setFontSize($size);
 	
-	// salva imagem, caso n„o seja informado o nome, ele gera um hash e salva
+	// salva imagem, caso n√£o seja informado o nome, ele gera um hash e salva
 	$simple->save();
 	
 	
-ObservaÁıes
+Observa√ß√µes
 -----------
 
 Atualmente a classe so trabalha com 3 tipos de imagem, PNG, JPEG e GIF.
+Necess√°rio atualiza√ß√£o
+
 
 	
 	
